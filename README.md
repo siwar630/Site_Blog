@@ -1,28 +1,30 @@
 
- ## Gestionnaire de contacts
+ ##  Un site web Symfony " Maladies Neuromusculaires "
 
-Ce site web est un gestionnaire de contacts simple développé en HTML5. Il permet d'ajouter, de modifier et de supprimer des contacts.
+Ce site web est une application Symfony conçue pour fournir des informations et des ressources sur les maladies neuromusculaires. Il s'adresse aux personnes atteintes de ces maladies, à leurs familles et aux professionnels de la santé.
 
 **Fonctionnalités principales**
-
-* Ajouter un contact
-* Modifier un contact
-* Supprimer un contact
-* Rechercher un contact
-
+ *Informations sur les maladies neuromusculaires .
+ *Ressources pour les patients et les familles .
+ *Outils pour les professionnels de la santé .
+ *Forum communautaire .
+ 
 **Conception**
-
 Le site web a une conception simple et minimaliste.
 
 **Technologie**
+ Symfony 6 ,Bootstrap 5 ,Doctrine ORM , Twig
+ 
+**Configuration**
 
-HTML5, CSS, JavaScript, Bootstrap
+1. Cloner le dépôt Git.
+2. Installer les dépendances Composer.
+3. Créer et configurer une base de données.
+4. Exécuter les migrations de base de données.
+5. Lancer le serveur web avec (symfony server:start ) .
 
-**Public cible**
+Voici la page d'acceuil du site ......
 
-Étudiants, enseignants, petites entreprises
+![Capture d’écran (80)](https://github.com/siwar630/Site_Blog/assets/130316042/cab38330-bb25-4654-8dab-4a31c7548a09)
 
-**Lien vers le site web**
-
-![Capture d’écran (78)](https://github.com/siwar630/Gestionnaire_De_Contact/assets/130316042/d4983161-cc44-49c3-aed1-aa46119d2e11)
 
