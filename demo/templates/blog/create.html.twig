@@ -1,0 +1,29 @@
+{% extends 'base.html.twig'%}
+{% form_theme formArticle 'bootstrap_4_layout.html.twig' %}
+{% block body %}
+{% if editMode %}
+<h1>Mettre à jour article !</h1>
+{% else %}
+    <h1>Creation de article !</h1>
+{% endif %}
+{% if app.user%}
+{{ form_start(formArticle)}}
+
+{{ form_row(formArticle.title ,{'attr': {'placeholder':"titre de article"}})}}
+{{ form_row(formArticle.category)}}
+{{ form_row(formArticle.content ,{'attr': {'placeholder':"contenu de article"}})}}
+{{ form_row(formArticle.image ,{'attr': {'placeholder':"Image de article"}})}}
+<button type="submit" class="btn btn-success">
+{% if editMode %}
+confirm modification
+{% else %}
+add article
+{% endif %}
+</button>
+{{ form_end(formArticle)}}
+{% else %}
+<h2> connect pour ajouter un commentaire</h2>
+<a href="{{path('security_login')}}" class="btn btn-primary">
+  login</a>
+{% endif %}
+{% endblock %}

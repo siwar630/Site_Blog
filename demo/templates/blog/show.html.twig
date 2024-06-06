@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<article>
+<br>
+{% if article is null %}
+<h1>No article</h1>
+{% else %}
+<a class="btn btn-success float-right" href="{{ path('blog_edit',{'id': article.id})}}">Mise à jour Article</a>
+<h2>{{article.title}}</h2>
+<div class="metadata">writen at {{article.createAt |date('d/m/Y') }} a {{article.createAt |date('H:i') }}  category {{article.category.title}}</div>
+<div class="content">
+<img src="{{article.image}}" alt="" height="400" width="900"><br><br>
+{{article.content | raw}}
+</div>
+</article>
+<section id="commentaires">
+<h1>{{ article.commentaires | length}}{{ " comments" }} : </h1><br>
+{% for comment in article.commentaires %}
+  <div class="comment">
+    <div class="row">
+      <div class="col-3">
+        {{comment.author}}
+      </div>
+      <div class="col">
+        {{comment.content | raw}}
+      </div>
+    </div>
+  </div><br>
+  {% endfor %}
+  {{ form_start(commentForm)}}
+  {{form_row(commentForm.author, {'attr':{'placeholder':"name"}})}}
+  {{form_row(commentForm.content, {'attr': {'placeholder': "your comment"}})}}
+  <button type="submit" class="btn btn-success">Ajouter comment !</button>
+  {{ form_end(commentForm)}}
+
+  {% endif %}
+
+{% endblock %}
