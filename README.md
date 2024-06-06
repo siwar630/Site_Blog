@@ -1,13 +1,14 @@
 
- ##  Un site web Symfony " Maladies Neuromusculaires "
+ ##  Un site web Symfony " Blog sur les Maladies Neuromusculaires "
 
 Ce site web est une application Symfony conçue pour fournir des informations et des ressources sur les maladies neuromusculaires. Il s'adresse aux personnes atteintes de ces maladies, à leurs familles et aux professionnels de la santé.
 
 **Fonctionnalités principales**
- *Informations sur les maladies neuromusculaires .
- *Ressources pour les patients et les familles .
- *Outils pour les professionnels de la santé .
- *Forum communautaire .
+
+ *Informations sur les maladies neuromusculaires 
+ *Ressources pour les patients et les familles 
+ *Outils pour les professionnels de la santé 
+ *Forum communautaire 
  
 **Conception**
 Le site web a une conception simple et minimaliste.
